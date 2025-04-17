@@ -32,5 +32,8 @@ ros2 service call /set_conversion_mode std_srvs/srv/SetBool "{data: true}"
 # Service call to switch to color mode
 ros2 service call /set_conversion_mode std_srvs/srv/SetBool "{data: false}"
 
+##You can check the streams in rviz2 visulation windows.
+rivz2
+
 # Run individual image conversion node
 ros2 run image_conversion image_conversion_node
