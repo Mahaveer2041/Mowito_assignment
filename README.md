@@ -2,9 +2,14 @@
 
 # 1. Image Conversion ROS 2 Package
 
-Src contains ROS 2 packages for image processing and camera publishing.
-Camera_publisher: Takes frames from your webcam via opencv and publishes on image_raw topic. On ubuntu camera sometimes dosent work try running this command in that case  "sudo usermod -aG video $USER"
-Image_conversion Package: Does the task of conversion. Service call have to be made to switch to greyscale.
+1. **camera_publisher**:  
+   Takes frames from your webcam via OpenCV and publishes on the `/image_raw` topic.  
+   On Ubuntu, the camera sometimes doesn’t work due to permissions. Try running:  
+   ```bash
+   sudo usermod -aG video $USER
+2. **Image conversion**:  
+   Does the task of conversion. Service call have to be made to switch to greyscale.
+   
 I have made the packages using ubuntu 22.04 and ROS Humble. Kindly check for dependency issues.
 ---
 
