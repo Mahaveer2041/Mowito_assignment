@@ -27,3 +27,11 @@ Service call
 ros2 service call /set_conversion_mode std_srvs/srv/SetBool "{data: true}"    /for blackwhite
 ros2 service call /set_conversion_mode std_srvs/srv/SetBool "{data: false}"   //for color
 
+Individual node running
+ros2 run image_conversion image_conversion_node
+
+## Quick Start
+1. Clone repo: [`git clone https://github.com/your/repo.git`](https://github.com/Mahaveer2041/Mowito_assignment.git)
+2. Build: ```colcon build --packages-select image_conversion```
+3. Run: ```ros2 launch image_conversion image_processing.launch.py```
+
