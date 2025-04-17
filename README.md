@@ -7,25 +7,30 @@ I have made the packages using ubuntu 22.04 and ROS Humble. Kindly check for dep
 ---
 
 ## 📁 How to Install
-
-Initialise your ROS(source install/setup.bash or if you have in bashrc no need)
 ```bash
+# Clone the repository
+git clone https://github.com/Mahaveer2041/Mowito_assignment.git
 
-## Quick Start
-1. Clone repo: ```git clone https://github.com/Mahaveer2041/Mowito_assignment.git```
-2. Move to Directory : ```cd mowito_assignmet```
-3. Build: ```colcon build --packages-select image_conversion```
-4. Initialise: ```source install/setup.bash```
-5. Run: ```ros2 launch image_conversion image_processing.launch.py```
-6. Launch with parameters: ```ros2 launch image_conversion image_processing.launch.py input_topic:=/camera/image output_topic:=/processed_image```
+# Move to the repository directory
+cd Mowito_assignment
 
+# Build selected packages
+colcon build --packages-select image_conversion camera_publisher
 
-Service call
-```bash
-ros2 service call /set_conversion_mode std_srvs/srv/SetBool "{data: true}"    /for blackwhite
-ros2 service call /set_conversion_mode std_srvs/srv/SetBool "{data: false}"   //for color
+# Source the workspace
+source install/setup.bash
 
-Individual node running
+# Basic launch (default parameters)
+ros2 launch image_conversion image_processing.launch.py
+
+# Launch with custom topics
+ros2 launch image_conversion image_processing.launch.py input_topic:=/camera/image output_topic:=/processed_image
+
+# Service call to switch to black & white mode
+ros2 service call /set_conversion_mode std_srvs/srv/SetBool "{data: true}"
+
+# Service call to switch to color mode
+ros2 service call /set_conversion_mode std_srvs/srv/SetBool "{data: false}"
+
+# Run individual image conversion node
 ros2 run image_conversion image_conversion_node
-
-
