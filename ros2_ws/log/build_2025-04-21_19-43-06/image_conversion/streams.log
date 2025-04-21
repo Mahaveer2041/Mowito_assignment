@@ -1,0 +1,39 @@
+[0.644s] Invoking command in '/home/mahaveer/Mowito_assignment/ros2_ws/src/image_conversion': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/image_conversion build --build-base /home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/build install --record /home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/install.log --single-version-externally-managed install_data
+[0.782s] running egg_info
+[0.783s] creating ../../build/image_conversion/image_conversion.egg-info
+[0.783s] writing ../../build/image_conversion/image_conversion.egg-info/PKG-INFO
+[0.783s] writing dependency_links to ../../build/image_conversion/image_conversion.egg-info/dependency_links.txt
+[0.783s] writing entry points to ../../build/image_conversion/image_conversion.egg-info/entry_points.txt
+[0.783s] writing requirements to ../../build/image_conversion/image_conversion.egg-info/requires.txt
+[0.783s] writing top-level names to ../../build/image_conversion/image_conversion.egg-info/top_level.txt
+[0.783s] writing manifest file '../../build/image_conversion/image_conversion.egg-info/SOURCES.txt'
+[0.784s] reading manifest file '../../build/image_conversion/image_conversion.egg-info/SOURCES.txt'
+[0.785s] writing manifest file '../../build/image_conversion/image_conversion.egg-info/SOURCES.txt'
+[0.785s] running build
+[0.785s] running build_py
+[0.785s] creating /home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/build
+[0.785s] creating /home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/build/lib
+[0.785s] creating /home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/build/lib/image_conversion
+[0.785s] copying image_conversion/image_conversion_node.py -> /home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/build/lib/image_conversion
+[0.785s] copying image_conversion/__init__.py -> /home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/build/lib/image_conversion
+[0.785s] running install
+[0.785s] running install_lib
+[0.785s] creating /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/lib/python3.10/site-packages/image_conversion
+[0.785s] copying /home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/build/lib/image_conversion/image_conversion_node.py -> /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/lib/python3.10/site-packages/image_conversion
+[0.785s] copying /home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/build/lib/image_conversion/__init__.py -> /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/lib/python3.10/site-packages/image_conversion
+[0.786s] byte-compiling /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/lib/python3.10/site-packages/image_conversion/image_conversion_node.py to image_conversion_node.cpython-310.pyc
+[0.786s] byte-compiling /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/lib/python3.10/site-packages/image_conversion/__init__.py to __init__.cpython-310.pyc
+[0.786s] running install_data
+[0.786s] creating /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/share/ament_index
+[0.786s] creating /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/share/ament_index/resource_index
+[0.786s] creating /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/share/ament_index/resource_index/packages
+[0.786s] copying resource/image_conversion -> /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/share/ament_index/resource_index/packages
+[0.786s] copying package.xml -> /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/share/image_conversion
+[0.786s] creating /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/share/image_conversion/launch
+[0.787s] copying launch/image_processing.launch.py -> /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/share/image_conversion/launch
+[0.787s] running install_egg_info
+[0.788s] Copying ../../build/image_conversion/image_conversion.egg-info to /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/lib/python3.10/site-packages/image_conversion-0.0.0-py3.10.egg-info
+[0.788s] running install_scripts
+[0.801s] Installing image_conversion_node script to /home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/lib/image_conversion
+[0.801s] writing list of installed files to '/home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/install.log'
+[0.819s] Invoked command in '/home/mahaveer/Mowito_assignment/ros2_ws/src/image_conversion' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mahaveer/Mowito_assignment/ros2_ws/install/image_conversion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/image_conversion build --build-base /home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/build install --record /home/mahaveer/Mowito_assignment/ros2_ws/build/image_conversion/install.log --single-version-externally-managed install_data

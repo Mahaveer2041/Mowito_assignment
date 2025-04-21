@@ -44,52 +44,7 @@ def quaternion_to_euler(q):
 
     return np.array([yaw, pitch, roll])
 
-def quaternion_to_rotation_matrix(q):
-    """Convert a quaternion to a 3x3 rotation matrix"""
-    w, x, y, z = q
-    return np.array([
-        [1 - 2*y**2 - 2*z**2, 2*x*y - 2*w*z,     2*x*z + 2*w*y],
-        [2*x*y + 2*w*z,       1 - 2*x**2 - 2*z**2, 2*y*z - 2*w*x],
-        [2*x*z - 2*w*y,       2*y*z + 2*w*x,     1 - 2*x**2 - 2*y**2]
-    ])
 
-def visualize_orientation(rotation_matrix, euler_angles=None, quaternion=None):
-    """Visualize the orientation in 3D space"""
-    fig = plt.figure(figsize=(8, 6))
-    ax = fig.add_subplot(111, projection='3d')
-    
-    # Original axes in dashed style
-    ax.quiver(0, 0, 0, 1, 0, 0, color='r', linestyle='--', label='Original X')
-    ax.quiver(0, 0, 0, 0, 1, 0, color='g', linestyle='--', label='Original Y')
-    ax.quiver(0, 0, 0, 0, 0, 1, color='b', linestyle='--', label='Original Z')
-    
-    # Rotated axes (via the rotation matrix)
-    rx = rotation_matrix @ np.array([1, 0, 0])
-    ry = rotation_matrix @ np.array([0, 1, 0])
-    rz = rotation_matrix @ np.array([0, 0, 1])
-    
-    ax.quiver(0, 0, 0, rx[0], rx[1], rx[2], color='r', label='Rotated X', linewidth=2)
-    ax.quiver(0, 0, 0, ry[0], ry[1], ry[2], color='g', label='Rotated Y', linewidth=2)
-    ax.quiver(0, 0, 0, rz[0], rz[1], rz[2], color='b', label='Rotated Z', linewidth=2)
-    
-    # Set plot limits and labels
-    ax.set_xlim([-1.5, 1.5])
-    ax.set_ylim([-1.5, 1.5])
-    ax.set_zlim([-1.5, 1.5])
-    ax.set_xlabel('X')
-    ax.set_ylabel('Y')
-    ax.set_zlabel('Z')
-    
-    # Create title with angles
-    title = "Orientation Visualization\n"
-    if euler_angles is not None:
-        title += f"Euler Angles: {np.degrees(euler_angles).round(2)}°\n"
-    if quaternion is not None:
-        title += f"Quaternion: {np.array(quaternion).round(4)}"
-    plt.title(title)
-    
-    ax.legend()
-    plt.show()
 
 if __name__ == "__main__":
     print("Select conversion type:")
@@ -111,13 +66,13 @@ if __name__ == "__main__":
         # Convert degrees to radians for internal computation
         euler_user = np.radians(user_angles_deg)
         q_user = euler_to_quaternion(*euler_user)
-        rm_user = quaternion_to_rotation_matrix(q_user)
+        
         
         print("\nConversion Result:")
         print("Quaternion:", np.array(q_user).round(4))
         print("Reconverted Euler angles (degrees):", np.degrees(quaternion_to_euler(q_user)).round(2))
         
-        visualize_orientation(rm_user, euler_user, q_user)
+        
     
     elif choice == "2":
         try:
@@ -130,13 +85,13 @@ if __name__ == "__main__":
             sys.exit(1)
         
         euler_from_q = quaternion_to_euler(user_q)
-        rm_from_q = quaternion_to_rotation_matrix(user_q)
+        
         
         print("\nConversion Result:")
         print("Euler angles (radians):", np.array(euler_from_q).round(4))
         print("Euler angles (degrees):", np.degrees(euler_from_q).round(2))
         
-        visualize_orientation(rm_from_q, euler_from_q, user_q)
+        
     
     else:
         print("Invalid selection! Exiting.")

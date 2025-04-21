@@ -1,0 +1,37 @@
+[0.649s] Invoking command in '/home/mahaveer/Mowito_assignment/ros2_ws/src/camera_publisher': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/camera_publisher build --build-base /home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/build install --record /home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/install.log --single-version-externally-managed install_data
+[0.793s] running egg_info
+[0.793s] creating ../../build/camera_publisher/camera_publisher.egg-info
+[0.793s] writing ../../build/camera_publisher/camera_publisher.egg-info/PKG-INFO
+[0.793s] writing dependency_links to ../../build/camera_publisher/camera_publisher.egg-info/dependency_links.txt
+[0.794s] writing entry points to ../../build/camera_publisher/camera_publisher.egg-info/entry_points.txt
+[0.794s] writing requirements to ../../build/camera_publisher/camera_publisher.egg-info/requires.txt
+[0.794s] writing top-level names to ../../build/camera_publisher/camera_publisher.egg-info/top_level.txt
+[0.794s] writing manifest file '../../build/camera_publisher/camera_publisher.egg-info/SOURCES.txt'
+[0.795s] reading manifest file '../../build/camera_publisher/camera_publisher.egg-info/SOURCES.txt'
+[0.795s] writing manifest file '../../build/camera_publisher/camera_publisher.egg-info/SOURCES.txt'
+[0.795s] running build
+[0.795s] running build_py
+[0.795s] creating /home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/build
+[0.795s] creating /home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/build/lib
+[0.795s] creating /home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/build/lib/camera_publisher
+[0.795s] copying camera_publisher/__init__.py -> /home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/build/lib/camera_publisher
+[0.795s] copying camera_publisher/camera_publisher.py -> /home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/build/lib/camera_publisher
+[0.795s] running install
+[0.796s] running install_lib
+[0.796s] creating /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/lib/python3.10/site-packages/camera_publisher
+[0.796s] copying /home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/build/lib/camera_publisher/__init__.py -> /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/lib/python3.10/site-packages/camera_publisher
+[0.796s] copying /home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/build/lib/camera_publisher/camera_publisher.py -> /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/lib/python3.10/site-packages/camera_publisher
+[0.796s] byte-compiling /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/lib/python3.10/site-packages/camera_publisher/__init__.py to __init__.cpython-310.pyc
+[0.796s] byte-compiling /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/lib/python3.10/site-packages/camera_publisher/camera_publisher.py to camera_publisher.cpython-310.pyc
+[0.797s] running install_data
+[0.797s] creating /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/share/ament_index
+[0.797s] creating /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/share/ament_index/resource_index
+[0.797s] creating /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/share/ament_index/resource_index/packages
+[0.797s] copying resource/camera_publisher -> /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/share/ament_index/resource_index/packages
+[0.797s] copying package.xml -> /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/share/camera_publisher
+[0.797s] running install_egg_info
+[0.798s] Copying ../../build/camera_publisher/camera_publisher.egg-info to /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/lib/python3.10/site-packages/camera_publisher-0.0.0-py3.10.egg-info
+[0.798s] running install_scripts
+[0.811s] Installing camera_publisher script to /home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/lib/camera_publisher
+[0.811s] writing list of installed files to '/home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/install.log'
+[0.842s] Invoked command in '/home/mahaveer/Mowito_assignment/ros2_ws/src/camera_publisher' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mahaveer/Mowito_assignment/ros2_ws/install/camera_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/camera_publisher build --build-base /home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/build install --record /home/mahaveer/Mowito_assignment/ros2_ws/build/camera_publisher/install.log --single-version-externally-managed install_data
